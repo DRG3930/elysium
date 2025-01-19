@@ -1,0 +1,6 @@
+/.gopath/
+/bin/
+/libexec/
+/.vendor/
+.idea/
+*.tmp
