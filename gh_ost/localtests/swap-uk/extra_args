@@ -1,1 +1,0 @@
---alter="drop primary key, add unique key(id)" 
