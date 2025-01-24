@@ -7,6 +7,11 @@ ghost + RSS &amp; more
     -  This step and next unnecessary if you can get into local network such 
     as having their pw from social engineering or taking a picture or the routers
      reset credentials then resetting it
+
+1b - python remote keylogger (requires target to download via x means)
+https://www.youtube.com/watch?v=LBM3EzBXhdY
+
+
 2. find target device using router etc.
     -   router gui or logs in router
     - (optional) create a VPN that is your own with same SSID and PW or open and 
@@ -36,6 +41,10 @@ Before we dive into a pseudocode example, let’s clarify how Bluetooth connecti
 3. **Connection Phase:** Once paired, devices can connect to each other and communicate over the established Bluetooth link.
 
 ### Pseudocode for a Hypothetical Bluetooth Connection
+bluetooth mostly for android / iphone will use stealing appleID
+
+ref: https://www.youtube.com/watch?v=Qb8Wvo9u5zE
+
 
             ```plaintext
             FUNCTION connect_to_bluetooth_device(target_device_name):
