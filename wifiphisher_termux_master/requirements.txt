@@ -1,0 +1,7 @@
+scapy==2.4.5         # For packet manipulation
+PyRIC==0.1.6.6       # For wireless card manipulation
+six==1.16.0          # For Python 2 and 3 compatibility
+setuptools>=40.0.0   # For package setup
+dnspython==2.2.1     # For DNS operations
+netifaces==0.11.0    # For network interface information
+Flask==2.0.3         # For web server functionalities

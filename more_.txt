@@ -1,0 +1,3 @@
+https://github.com/pentestfunctions?tab=repositories -> !!gold mine!!
+
+https://github.com/pentestfunctions/traitor -> Linux priv esc (MIT LICENSE)

@@ -1,0 +1,36 @@
+
+1. **Check for Unknown Apps**: Verify if there are any unfamiliar apps installed on your phone. In Termux (Android Linux shell), you can list installed packages using:
+   ```sh
+   pm list packages -3
+   ```
+   This command lists all third-party packages on your device.
+
+2. **Monitor System Logs**: Use the `logcat` command in Termux to monitor logs:
+   ```sh
+   logcat
+   ```
+   Look for any suspicious activity or unfamiliar services.
+
+3. **Network Usage**: Monitor data usage for unusual spikes. Use:
+   ```sh
+   iftop -i [interface]
+   ```
+   This command helps to see the real-time network traffic on your device.
+
+4. **File System Changes**: Check for recently modified files:
+   ```sh
+   find / -mtime -1
+   ```
+   This lists files modified in the past day.
+
+5. **Battery and Data Indicators**: Be aware of unusual battery drain and data usage, which could suggest unauthorized background activities.
+
+6. **Permissions Review**: Check permissions granted to apps:
+   ```sh
+   appops
+   ```
+
+7. **Run a Malware Scan**: Use a reputable antivirus or anti-spyware app to scan for potential threats.
+
+Additionally, enabling **Developer Options** and regularly reviewing activities can also help you stay ahead of any suspicious apps or services.
+

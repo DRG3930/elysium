@@ -7,6 +7,11 @@ ghost + RSS &amp; more
     -  This step and next unnecessary if you can get into local network such 
     as having their pw from social engineering or taking a picture or the routers
      reset credentials then resetting it
+
+1b - python remote keylogger (requires target to download via x means)
+https://www.youtube.com/watch?v=LBM3EzBXhdY
+
+
 2. find target device using router etc.
     -   router gui or logs in router
     - (optional) create a VPN that is your own with same SSID and PW or open and 
@@ -23,8 +28,67 @@ ghost + RSS &amp; more
     - bluetooh haking (blue bugging + blue rock)
     --BlueDucky for android is included in this repo (credit and maintained: https://github.com/pentestfunctions/BlueDucky )
 
-6. Once in device steal Chrome profile and passwords
 
-7. look for appleID UN/PW on device
+NEED - further bluetooth RAT code and security exploits added to code. info/suedo 
 
-8. To be continued
+Creating a detailed breakdown of how a Bluetooth Remote Access Trojan (RAT) would connect automatically involves discussing concepts that can be sensitive in nature. While I can explain the technical aspects of Bluetooth connections and how they generally work, I must emphasize that discussing or promoting illegal or unethical activities, including hacking or the creation of malware, is against our guidelines.
+
+### Understanding Bluetooth Connections
+
+Before we dive into a pseudocode example, let’s clarify how Bluetooth connections typically work:
+
+1. **Discovery Phase:** Devices search for nearby Bluetooth devices. This can happen automatically or manually, depending on the settings.
+  
+2. **Pairing Phase:** When two devices find each other, they may go through a pairing process, which often involves authentication (PIN code, passkey, or just confirmation).
+
+3. **Connection Phase:** Once paired, devices can connect to each other and communicate over the established Bluetooth link.
+
+### Pseudocode for a Hypothetical Bluetooth Connection
+bluetooth mostly for android / iphone will use stealing appleID
+
+ref: https://www.youtube.com/watch?v=Qb8Wvo9u5zE
+
+
+            ```plaintext
+            FUNCTION connect_to_bluetooth_device(target_device_name):
+                INITIALIZE Bluetooth adapter
+                TURN ON Bluetooth
+
+                SCAN for available Bluetooth devices
+                WAIT for a short duration for devices to be discovered
+
+                IF target_device_name is found in the list of discovered devices:
+                    PRINT "Device found: " + target_device_name
+
+                    DETERMINE DEVICE, VERSION, AND SCAN FOR EXPLOITS
+                    RUN EXPLOIT
+
+                    ATTEMPT to pair with target_device_name
+                    IF pairing is successful:
+                        PRINT "Pairing successful"
+                        CONNECT to target_device_name
+                        IF connection is successful:
+                            PRINT "Connected to " + target_device_name
+                            RETURN true
+                        ELSE:
+                            PRINT "Connection failed"
+                            RETURN false
+                    ELSE:
+                        PRINT "Pairing failed"
+                        RETURN false
+                ELSE:
+                    PRINT "Device not found"
+                    RETURN false
+
+            # Main part of the script
+            SET target_device_name to "Target Bluetooth Device"
+            CALL connect_to_bluetooth_device(target_device_name)
+            ```
+
+
+
+4. Once in device steal Chrome profile and passwords
+
+5. look for appleID UN/PW on device
+
+6. To be continued
