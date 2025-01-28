@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walmart Attack Synopsis</title>
+    <style>
+        /* Add smoother, easier-on-the-eye font */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: #1a1a2e; /* Change to a darker blue */
+            font-family: 'Georgia', serif; /* Softer font for headers */
+            background: linear-gradient(to bottom, #f3ac41, #ffe9a3); /* Grey gradient box */
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for softer look */
+        }
+
+     h2 {
+            text-align: center;
+            color: #1a1a2e; /* Change to a darker blue */
+            font-family: 'Georgia', serif; /* Softer font for headers */
+            background: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Grey gradient box */
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for softer look */
+        }
+
+        i {
+            text-align: center;
+        }
+        
+        b {
+            display: block;
+            text-align: left;
+        }
+        
+        .left-aligned-container {
+            text-align: left;
+            width:40%;
+            word-wrap: break-word; /* Ensures words wrap within the container */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .left-aligned-img-container {
+            image-orientation: left;
+            border-image-width: 40%;
+            align-self: start;
+            word-wrap: break-word; /* Ensures words wrap within the container */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left-aligned-container">
+      <h1>Walmart Attack Synopsis: A More Informed Review</h1>
+        <p style="text-align: center;"><i>Author: Mason Dyess</i></p>
+
+        <h2>Introduction</h2>
+        <p>After taking a well-deserved break, during which I relaxed, indulged in good food, and got ample sleep while continuing my research, I now have a much clearer understanding of the Walmart attack. Knowing what I know now, I regret not being better informed during our meeting, as I could have provided more accurate details and insights to explain the events that took place and the technology used.</p>
+        <p>Initially, I was highly stressed, had almost no sleep, and lacked the ability to research during the attack. Trying to understand what I was looking at, what the adversaries were doing, while also trying to defend multiple devices and comprehend the technology presented was challenging.</p>
+
+        <h2>Tools for Stealing Passwords – Found on Personal Android Device</h2>
+        <p>Several hacking tools were discovered on my Android phone, including:</p>
+        <ul>
+            <li><b>W0rm-GPT</b>: A hacking tool that uses AI to assist in writing viruses and malware, such as retrieving passwords from browsers.</li>
+            
+            <p><b>Variants:</b></p>
+            <ul>
+                <li><b>WormGPT-AI/WormGPT</b><a href="https://github.com/WormGPT-AI/WormGPT?form=MG0AV3"> w0rm1-gpt1</a></li>
+                <li><b>JuraSecurity/Worm-GPT</b><a href="https://imgur.com/a/7kB8elB">w0rm1-gpt2</a></li>
+                <li><b>CarbonComputers/Worm-GPT</b><a href="https://github.com/CarbonComputers/Worm-GPT">w0rm1-gpt3</a></li>
+            </ul>
+            <div class ="gned-img-container"> <img src="https://i.imgur.com/OoPEUXw.jpeg" alt="no" height="50%" width="50%"></div>
+                
+
+        </ul>
+
+        <h2>Tools That Can Explain DOM Manipulation and MITM Attacks</h2>
+        <p>The Burp Suite was likely used as it contains various tools that assist in attacks, such as Man-In-The-Middle (MITM) attacks, which could explain some of the incorrect images and data displayed on pages.</p>
+
+        <h2>iPhone and Mac Access</h2>
+        <p>I believe the iPhone control (and possibly MacBook control) stemmed from stealing my Apple ID. If two Apple devices use the same Apple ID, they can mirror each other, explaining the behavior I observed on both devices. Some potential consequences include:</p>
+        <ul>
+            <li><b>Shared Data</b>: Contacts, calendars, and app data are synchronized across devices.</li>
+            <li><b>Photos and Videos</b>: Sync automatically if iCloud Photos is enabled.</li>
+            <li><b>Messages and Calls</b>: Received on both phones, leading to potential confusion.</li>
+            <li><b>Apps and Purchases</b>: Shared app data and purchases.</li>
+            <li><b>Find My iPhone</b>: Both devices appear in the Find My app.</li>
+        </ul>
+        <p>For security reasons, direct control features are limited. More direct control or remote access requires explicit setup through apps like AnyDesk or TeamViewer.</p>
+
+        <h2>Further (Apple ID on Two Mac Computers)</h2>
+        <p>When using the same Apple ID across multiple devices, these features become available:</p>
+        <ul>
+            <li><b>Find My App</b>: Locate, lock, or erase Apple devices.</li>
+            <li><b>Handoff and Continuity</b>: Start tasks on one device and continue them on another.</li>
+            <li><b>Messages and Calls</b>: Conversations stay in sync; calls can be made directly from Mac.</li>
+            <li><b>iCloud Drive</b>: Securely store and access documents across devices.</li>
+            <li><b>Apple Ecosystem Integration</b>: Seamless integration with features like AirDrop, Apple Pay, and automated workflows.</li>
+        </ul>
+
+        <h2>Bluetooth Attacks</h2>
+        <p>It's challenging to determine which Bluetooth RAT was used, but BlueBorne or a similar tool seems likely. Relevant resources:</p>
+        <ul>
+            <li><b>Video on BlueBorne Attack</b>: <a href="https://youtu.be/Az-l90RCns8">YouTube Link</a></li>
+            <li><b>Code Repository</b>: <a href="https://github.com/DRG3930/elysium/blueborne-master">Elysium/BlueBorne</a></li>
+            <li><b>BlueDucky for Android Devices</b>: <a href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueD"> Blue Ducky</a></li> 
+            <li><b>Elysium/BlueDucky</b></bElysium><a href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueDucky-main">Elysium/BlueDucky</a></li>
+        </p>
+        
+        <h2 style="text-align: center;">Linux Privilege Escalation</h2>
+        <p> Traitor, a tool for privilege escalation, was used and can be found in my repository:<br\>
+            <ui>
+                <li><b>Elysium/BlueDucky for privledge escelation</b><a href="https://github.com/DRG3930/elysium/traitor_main">Elysium/Traitor</a></li>
+                </ui>
+            </p>
+        
+        <h2 style="text-align: center;">Revoking Comments on GH-OST and RSS Involvement</h2>
+        <p>
+            The involvement of GH-OST and RSS now seems implausible. I initially thought they were decompiling binaries from that repo using vanilla Linux. 
+            They performed small modifications to numerous binary files, but in reality, I had a misunderstanding. 
+            I would not have known about <code>fileprocsctrl</code> or <code>file -C filename</code> if it hadn't been introduced by the attackers. 
+            They performed these actions repeatedly, influencing my initial analysis.
+        </p>
+                
+        
