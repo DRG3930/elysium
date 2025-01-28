@@ -7,6 +7,7 @@
         /* Add smoother, easier-on-the-eye font */
         body {
             font-family: 'Arial', sans-serif;
+            color: white
         }
 
         p {
@@ -23,15 +24,6 @@
             border-radius: 10px;
         }
 
-        .h0 {
-            text-align: center;
-            color: #1a1a2e;
-            font-family: 'Georgia', serif;
-            background: linear-gradient(to bottom, #4745453f, #6a5858);
-            padding: 10px;
-            padding-left: 10px;
-            border-radius: 12px;
-        }
 
         h2 {
             text-align: center;
@@ -51,9 +43,27 @@
             margin-right: auto;
         }
 
+        .h0 {
+            text-align: center;
+            color: #1a1a2e;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #4745453f, #6a5858);
+            padding: 10px;
+            padding-left: 10px;
+            border-radius: 12px;
+        }
+
+        .p1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(227, 5, 5)
+        }
+
+
         .gned-img-container {
             text-align: center;
             margin: 20px 0;
+            position: left;
         }
 
         .middle-aligned-iframe-div {
@@ -61,10 +71,27 @@
             margin: 20px;
             align-items: center;
         }
+
+        #parent {
+            display: flex;
+        }
+
+        #narrow {
+            width: 400;
+            background: rgba(30, 31, 31, 0.86);
+            /* Just so it's visible */
+        }
+
+        #wide {
+            flex: 1;
+            /* Grow to rest of container */
+            background: rgb(27, 93, 27);
+            /* Just so it's visible */
+        }
     </style>
 </head>
 
-<body>
+<body style="background-color: rgb(29, 29, 30);" color="white">
     <div class="left-aligned-container">
         <h1>Walmart Attack Synopsis: A More Informed Review</h1>
         <p style="text-align: center;"><i>Author: Mason Dyess</i></p>
@@ -81,44 +108,47 @@
 
         <div class="oh">In the normal hacking order - target found, get network</div>
         <div class="oh">get other devices and back door, use exploits for sudo and the rest is up yo you</div>
-
+<br>
         <h2>Tools for Stealing Passwords</h2>
-        <h2> Found on Personal Android Device</h2><br>
+        <h3 style="text-align: center;">These found on my Android</h3><br>
 
         <p>Several hacking tools were discovered on my Android phone, including:</p>
         <ul>
-            <li><b>W0rm-GPT</b>: A hacking tool that uses AI to assist in writing viruses and malware, such as
-                retrieving passwords from browsers.</li><br>
+            <li><b>W0rm-GPT</b>
+                A hacking tool that uses AI to assist in writing viruses and malware, such as
+                retrieving passwords from browsers.</liS><br>
         </ul>
 
-        <h3><b>Variants:</h3b>
-                </p>
-                <ul>
-                    <li><b>WormGPT-AI/WormGPT</b><a href="https://github.com/WormGPT-AI/WormGPT?form=MG0AV3">
-                            w0rm1-gpt1</a> </li><br>
-                    <li><b>JuraSecurity/Worm-GPT</b><a href="https://imgur.com/a/7kB8elB">w0rm1-gpt2</a></li><br>
-                    <li><b>CarbonComputers/Worm-GPT</b><a
-                            href="https://github.com/CarbonComputers/Worm-GPT">w0rm1-gpt3</a></li><br>
-                </ul>
+        <h3><b>Variants:</b></h3b>
 
-                <div class="gned-img-container">
-                    <img src="https://i.imgur.com/OoPEUXw.jpeg" alt="no" height="50%" width="50%">
-                </div>
+                <div id="parent">
+                    <div id="wide">
+                        <img src="https://i.imgur.com/OoPEUXw.jpeg" style="vertical-align:auto;"  height="100%" width="100%" padding="5px" position="middle">
+                    </div>
+                    <div id="narrow">
+                        <ul>
+                            <li>WormGPT-AI/WormGPT<a href="https://github.com/WormGPT-AI/WormGPT?form=MG0AV3">
+                                    w0rm1-gpt1</a> </li><br>
+                            <li>JuraSecurity/Worm-GPT<a href="https://imgur.com/a/7kB8elB">w0rm1-gpt2</a></li>
+                            <br>
+                            <li>CarbonComputers/Worm-GPT<a
+                                    href="https://github.com/CarbonComputers/Worm-GPT">w0rm1-gpt3</a></li><br>
+                        </ul>
+                    </div>
+                </div><br><br>
+
 
 
 
                 <h2>Tools That Explain DOM Manipulation and MITM Attacks</h2><br>
 
-
-
                 <p>The Burp Suite was likely used as it contains various tools that assist in attacks, such as
                     Man-In-The-Middle
                     (MITM) attacks, which could explain some of the incorrect images and data displayed on pages.</p>
-
+                    <br>
 
                 <h2>The Infamous XSS</h2>
-                <p text-align: center>cross site scripting</p><br>
-
+                <P style="text-align: center; color: red;">cross site scripting</p><br>
 
                 <h3>Log Injection Remote Code Execution (RCE)</h3><br>
                 <p>In a log injection attack, an attacker could insert malicious code into a log file in a way that
@@ -142,21 +172,7 @@
 
 
 
-
-                <h2 style="text-align: center;">Revoking My Comments on GH-OST and RSS Involvement</h2><br>
-                <p>
-                    The involvement of GH-OST and RSS now seems implausible. I initially thought they were decompiling
-                    binaries from that repo using vanilla Linux.
-                    They performed small modifications to numerous binary files, but in reality, I had a
-                    misunderstanding.
-                    I would not have known about <code>fileprocsctrl</code> or <code>file -C filename</code> if it
-                    hadn't
-                    been introduced by the attackers.
-                    They performed these actions repeatedly, influencing my initial analysis.
-                </p><br>
-
-
-                <h2 style="text-align= center;">Stored XSS Definition</h2><br>
+                <h2 style="text-align: center;">Stored XSS Definition</h2><br>
                 <p>
                     Stored XSS, occurs when user supplied input is stored and then rendered within a web page. Typical
                     entry
@@ -224,14 +240,13 @@
                     likely.
                     Relevant resources:</p>
                 <ul>
-                    <li><b>Video on BlueBorne Attack</b>: <a href="https://youtu.be/Az-l90RCns8">YouTube Link</a></li>
+                    <li>hoVideo on BlueBorne Attack: <a href="https://youtu.be/Az-l90RCns8">YouTube Link</a></li>
                     <br>
-                    <li><b>Code Repository</b>: <a
-                            href="https://github.com/DRG3930/elysium/blueborne-master">Elysium/BlueBorne</a></li><br>
-                    <li><b>BlueDucky for Android Devices</b>: <a
+                    <li>hoCode Repository: <a href="https://github.com/DRG3930/elysium/blueborne-master">Elysium/BlueBorne</a></li><br>
+                    <li>hoBlueDucky for Android Devices: <a>
                             href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueD">
                             Blue Ducky</a></li><br>
-                    <li><b>Elysium/BlueDucky</b></bElysium><a
+                    <li>hoElysium/BlueDucky</bElysium><a
                             href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueDucky-main">Elysium/BlueDucky</a>
                     </li><br>
                     </p>
@@ -240,6 +255,7 @@
 
                     <ho> Once youre able to get into a computer, you must have the right access....</ho>
 
+                    <br>
                     <h2 style="text-align: center;">We call this privilege Escalation - becominging a system admin</h2>
                     <br>
                     <p>
@@ -318,10 +334,7 @@
                             </li><br>
                         </ol>
 
-
-
-
-
+                        <br>
                         <h2 style="text-align: center;">Revoking My Previous Comments on gh-ost and RSS having any
                             involvement</h2><br>
                         <p>
@@ -337,10 +350,8 @@
                         </p>
 
 
-
-
-                        <h2>While gh-ost may not be related to this attach there is another GHOST </h2>
-                        <p style="text-align: center">GHOSTS was developed by Carnigie Melon and has the power to
+                        <h2>While gh-ost may not be related to this attack, there is another GHOST </h2>
+                        <p style="text-align: center;">GHOSTS was developed by Carnigie Melon and has the power to
                             achieve the insane thigns I saw</p><br>
 
                         <p>Developed by Carnegie Mellon University's Software Engineering Institute (SEI), the GHOSTS
@@ -367,7 +378,7 @@
                             Clients simulate user activities based
                             on timelines and NPCs:</p>
 
-                        <p text-align="center"><a href="https://github.com/cmu-sei/GHOSTS"> Ghosts repo</a></p>
+                        <div><p><a href="https://github.com/cmu-sei/GHOSTS"> Ghosts repo</a></p></div>
 
 
                         <div>
