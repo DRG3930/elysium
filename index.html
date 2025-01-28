@@ -9,58 +9,44 @@
             font-family: 'Arial', sans-serif;
         }
 
+        p {}
+
         h1 {
             text-align: center;
             color: #1a1a2e;
-            /* Change to a darker blue */
             font-family: 'Georgia', serif;
-            /* Softer font for headers */
             background: linear-gradient(to bottom, #f3ac41, #ffe9a3);
-            /* Grey gradient box */
             padding: 10px;
             border-radius: 10px;
-            /* Rounded corners for softer look */
         }
 
         h2 {
             text-align: center;
             color: #1a1a2e;
-            /* Change to a darker blue */
             font-family: 'Georgia', serif;
-            /* Softer font for headers */
             background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
-            /* Grey gradient box */
             padding: 10px;
-            border-radius: 10px;
-            /* Rounded corners for softer look */
-        }
-
-        i {
-            text-align: center;
-        }
-
-        b {
-            display: block;
-            text-align: left;
+            padding-left: 10px;
+            border-radius: 12px;
         }
 
         .left-aligned-container {
             text-align: left;
-            width: 40%;
+            width: 50%;
             word-wrap: break-word;
-            /* Ensures words wrap within the container */
             margin-left: auto;
             margin-right: auto;
         }
 
-        .left-aligned-img-container {
-            image-orientation: left;
-            border-image-width: 40%;
-            align-self: start;
-            word-wrap: break-word;
-            /* Ensures words wrap within the container */
-            margin-left: auto;
-            margin-right: auto;
+        .gned-img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .middle-aligned-iframe-div{
+            text-align: center;
+            margin: 20px;
+            align-items: center;
         }
     </style>
 </head>
@@ -84,20 +70,19 @@
         <ul>
             <li><b>W0rm-GPT</b>: A hacking tool that uses AI to assist in writing viruses and malware, such as
                 retrieving passwords from browsers.</li>
-
-            <p><b>Variants:</b></p>
-            <ul>
-                <li><b>WormGPT-AI/WormGPT</b><a href="https://github.com/WormGPT-AI/WormGPT?form=MG0AV3"> w0rm1-gpt1</a>
-                </li>
-                <li><b>JuraSecurity/Worm-GPT</b><a href="https://imgur.com/a/7kB8elB">w0rm1-gpt2</a></li>
-                <li><b>CarbonComputers/Worm-GPT</b><a href="https://github.com/CarbonComputers/Worm-GPT">w0rm1-gpt3</a>
-                </li>
-            </ul>
-            <div class="gned-img-container"> <img src="https://i.imgur.com/OoPEUXw.jpeg" alt="no" height="50%"
-                    width="50%"></div>
-
-
         </ul>
+
+        <p><b>Variants:</b></p>
+        <ul>
+            <li><b>WormGPT-AI/WormGPT</b><a href="https://github.com/WormGPT-AI/WormGPT?form=MG0AV3"> w0rm1-gpt1</a>
+            </li>
+            <li><b>JuraSecurity/Worm-GPT</b><a href="https://imgur.com/a/7kB8elB">w0rm1-gpt2</a></li>
+            <li><b>CarbonComputers/Worm-GPT</b><a href="https://github.com/CarbonComputers/Worm-GPT">w0rm1-gpt3</a></li>
+        </ul>
+
+        <div class="gned-img-container">
+            <img src="https://i.imgur.com/OoPEUXw.jpeg" alt="no" height="50%" width="50%">
+        </div>
 
         <h2>Tools That Can Explain DOM Manipulation and MITM Attacks</h2>
         <p>The Burp Suite was likely used as it contains various tools that assist in attacks, such as Man-In-The-Middle
@@ -141,7 +126,7 @@
                     href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueDucky-main">Elysium/BlueDucky</a></li>
             </p>
 
-            <h2 style="text-align: center;">Linux Privilege Escalation</h2>
+            <h2>Linux Privilege Escalation</h2>
             <p> Traitor, a tool for privilege escalation, was used and can be found in my repository:<br\>
                     <ui>
                         <li><b>Elysium linux priv escelation</b><a
@@ -186,10 +171,6 @@
                             href="https://thegadgetbuyer.com/what-happens-if-two-iphones-have-the-same-apple-id/?form=MG0AV3">Source</a></b>
                 </li>
             </ol>
-            <h2 style="text-align: center;">BlueDucky for Android Devices</h2>
-            <p>
-                <a href="https://github.com/DRG3930/elysium/BlueDucky_main/BlueDucky-main">Elysium/BlueDucky</a>
-            </p>
 
             <h2 style="text-align: center;">Linux Privilege Escalation</h2>
             <p>
@@ -309,29 +290,37 @@
             <p>
             <p>Check out this quick three-minute introductory video on YouTube:</p>
 
+            <div class="middle-aligned-iframe-div">
+                <iframe style="align-items: center;" width="550" height="300"
+                    src="https://www.youtube.com/embed/EkwK-cqwjjA" title="GHOSTS" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
-            <iframe width="600" height="550" src="https://www.youtube.com/embed/EkwK-cqwjjA" title="GHOSTS"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <p>At its core, GHOSTS consists of a client and an API server. The client runs on simulated user devices
+            <p text-align="center">At its core, GHOSTS consists of a client and an API server. The client runs on
+                simulated user devices
                 (e.g., workstations), while the API server is managed centrally. Clients simulate user activities based
                 on timelines and NPCs:</p>
 
-            <p><a href="https://github.com/cmu-sei/GHOSTS"> Ghosts repo</a></p>
+            <p text-align="center"><a href="https://github.com/cmu-sei/GHOSTS"> Ghosts repo</a></p>
 
+            <div>
             <ul>
                 <li><b>Timelines</b>: Preconfigured scripts that define user behavior (tasks, operations, and
                     durations).</li>
                 <li><b>NPCs</b>: Autonomous actors that simulate human-like interactions, working independently or in
                     groups, and can be reprogrammed via the API.</li>
             </ul>
+            </div>
 
-            <p>This presentation covers the research and technology behind the GHOSTS framework for thinking about and implementing realism in a simulation, training, or exercise event.
+            <p text-align="center">This presentation covers the research and technology behind the GHOSTS framework for
+                thinking about and
+                implementing realism in a simulation, training, or exercise event.
             </p>
-            <iframe width="672" height="378" src="https://www.youtube.com/embed/Rc9QD3voSGA"
-                title="GHOSTS in the Machine: Orchestrating a Realistic Cybersecurity Exercise Battlefield"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="middle-aligned-iframe-div">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/Rc9QD3voSGA"
+                    title="GHOSTS in the Machine: Orchestrating a Realistic Cybersecurity Exercise Battlefield"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" position="center" allowfullscreen></iframe>
+            </div>
