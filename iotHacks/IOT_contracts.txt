@@ -1,0 +1,6 @@
+https://learn.microsoft.com/en-us/rest/api/iotcentral/?form=MG0AV3
+
+https://docs.aws.amazon.com/iot/
+
+https://cloud.google.com/iot/docs/reference/cloudiot/rest
+
