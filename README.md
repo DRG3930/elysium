@@ -1,8 +1,7 @@
 # Elysium
 A collection of hacking tools that are being formed into one ultimate (white hate) hacking 
-application. Like Kali linux, but with an interface that requires less handson, less understanding, 
-and incorporates w0rm-GPT and Dark Bert to achieve the impossible.
+application. An interface is under construction that will require less handson, less understanding, 
+and incorporate some of the latest and most powerful AI tools such as w0rm-GPT and Dark Bert to achieve the impossible.
 
-White hate only. This repo will be made private only. If you want to earn access, message me.
-I could use some contributors.
+This repo is public only for a brief time to share with desired parties before made private. This is not intended for maliscious use but rather to use in a lab environment for learning and educational purposed. Using these tools for other purposees is highly illegal and may result in serious consequences including imprisonment. The repo is watched and any fork will be logged.
 
